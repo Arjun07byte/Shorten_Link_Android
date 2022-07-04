@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.ShortenLink" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/darkBg</item>
+        <item name="colorPrimaryVariant">@color/darkTextHint</item>
+        <item name="colorOnPrimary">@color/darkShortenButtonFront</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/darkText</item>
+        <item name="colorSecondaryVariant">@color/darkShortenButtonBack</item>
+        <item name="colorOnSecondary">@color/lightText</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">?attr/colorSecondary</item>
+        <item name="android:fontFamily">@font/allerta_regular</item>
+    </style>
+</resources>
