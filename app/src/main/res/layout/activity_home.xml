@@ -30,7 +30,8 @@
         android:background="#00FFFFFF"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/upper_design_GL"
-        app:layout_constraintStart_toStartOf="@id/share_button_VGL2"/>
+        app:layout_constraintStart_toStartOf="@id/share_button_VGL2"
+        android:contentDescription="Help Button" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/link_editText_GL"
@@ -50,7 +51,7 @@
         android:id="@+id/app_headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tap to Share"
+        android:text="Tap Button to Shorten Link"
         android:textColor="?attr/colorSecondary"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,20 +69,23 @@
         android:background="@drawable/edit_text_bg">
 
         <EditText
+            android:id="@+id/enteredURL"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/edit_text_bg"
-            android:hint="ENTER URL TO SHORTEN"
+            android:gravity="center|start"
+            android:hint="ENTER / PASTE LONG URL"
+            android:inputType="textUri"
             android:textSize="14sp"
             android:paddingStart="15dp"
             android:maxLines="1"
-            android:inputType="textEmailSubject"
             android:textColor="?attr/colorPrimaryVariant"
+            android:background="@drawable/edit_text_bg"
             tools:ignore="RtlSymmetry"
             android:textCursorDrawable="?attr/colorOnSecondary"/>
 
         <ImageButton
+            android:id="@+id/pasteButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -139,6 +143,7 @@
     </FrameLayout>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/bottomSheet"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

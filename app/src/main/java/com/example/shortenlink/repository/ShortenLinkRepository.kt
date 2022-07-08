@@ -8,7 +8,6 @@ class ShortenLinkRepository(
     private val myDB: ShortenLinkDatabase
 ){
     suspend fun getMyLinkShortened(givenUrl: String) = MyRetrofitInstance.apiVariable.getMyLinkShortened(myLongerUrl = givenUrl)
-
     suspend fun insert(givenShortenedLink: ShortenUrl) = myDB.getShortenLinkDAO().insert(givenShortenedLink)
     fun getAllShortenedLink() = myDB.getShortenLinkDAO().getAllLinks()
 }

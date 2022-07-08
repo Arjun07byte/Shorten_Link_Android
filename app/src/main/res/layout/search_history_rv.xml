@@ -10,22 +10,28 @@
 
     <TextView
         android:id="@+id/shared_link_title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Title"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:textColor="?attr/colorSecondary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintEnd_toStartOf="@id/copy_short_link"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="10dp"/>
 
     <TextView
         android:id="@+id/shorten_link"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Shorten Link"
-        android:textColor="?attr/colorSecondary"
+        android:textColor="?attr/colorPrimaryVariant"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/copy_short_link"
         app:layout_constraintTop_toBottomOf="@id/shared_link_title"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp" />
 
     <ImageButton
         android:id="@+id/copy_short_link"

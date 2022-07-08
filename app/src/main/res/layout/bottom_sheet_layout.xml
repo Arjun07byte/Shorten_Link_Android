@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bottom_sheet_bg"
     app:behavior_hideable="false"
     app:behavior_peekHeight="56dp"
@@ -41,6 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/share_history_title"
         app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/search_history_rv"
         android:layout_margin="15dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
