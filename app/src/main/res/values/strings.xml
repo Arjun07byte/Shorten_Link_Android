@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Shorten Link</string>
+    <string name="help_text">The Application lets you shorten your Long URLs in cutt.ly short links.\n\nYou Just have to click on the floating button at home screen.\n\nAlternatively, You can also shorten links in one click by choosing the application while sharing links.</string>
+
 </resources>

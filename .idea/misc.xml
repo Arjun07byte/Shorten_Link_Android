@@ -9,16 +9,19 @@
         <entry key="app/src/main/res/drawable/ic_design1_1_.xml" value="0.1705" />
         <entry key="app/src/main/res/drawable/ic_design1_2_.xml" value="0.1705" />
         <entry key="app/src/main/res/drawable/ic_help.xml" value="0.1705" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1405" />
         <entry key="app/src/main/res/drawable/ic_link.xml" value="0.1705" />
         <entry key="app/src/main/res/drawable/ic_paste.xml" value="0.1705" />
         <entry key="app/src/main/res/drawable/light_upper_design.xml" value="0.1705" />
         <entry key="app/src/main/res/drawable/share_button_bg.xml" value="0.1705" />
-        <entry key="app/src/main/res/layout/activity_help.xml" value="0.19375" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_help.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17222222222222222" />
         <entry key="app/src/main/res/layout/activity_share_link.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/bottom_dialog_view.xml" value="0.1712962962962963" />
         <entry key="app/src/main/res/layout/bottom_sheet_layout.xml" value="0.2" />
         <entry key="app/src/main/res/layout/search_history_rv.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/short_link_dialog.xml" value="0.17222222222222222" />
       </map>
     </option>
   </component>
