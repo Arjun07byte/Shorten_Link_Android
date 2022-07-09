@@ -1,6 +1,6 @@
 # 😎😎 Shorten_Link_Android 😎😎
 
-Android application to shorten long URLs into a single click by just choosing the application while sharing the URLs. 
+Android application to shorten long URLs into a single click by just choosing the application while sharing the URLs ( made in just 6 days). 
 
 Application uses ROOM database to let the user access all the links they shortened in past, uses RETROFIT to call the cutt.ly API.
 
