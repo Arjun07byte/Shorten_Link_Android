@@ -31,6 +31,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var myViewModel: ShortenLinkViewModel
     private lateinit var myAdapter: HistoryRvAdapter
     private lateinit var myDialogRootView: View
+    private lateinit var myBottomSheetDialog: BottomSheetDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +46,8 @@ class HomeActivity : AppCompatActivity() {
 
         // set Up my History RV adapter and initializing the History RV Adapter Object
         setUpRVAdapter()
+
+        setUpMyBottomSheetDialog()
 
         // setting the Shorten Link Button Listener
         setUpShortenButtonListener()
@@ -92,6 +95,12 @@ class HomeActivity : AppCompatActivity() {
                     myTitleTV.text = it.myData.title
                     myShortLinkTV.text = it.myData.shortLink
                     mySendButton.text = "Share Link"
+                    mySendButton.setOnClickListener {
+                        val myIntent = Intent(Intent.ACTION_SEND); myIntent.type = "text/plain"
+                        myIntent.putExtra(Intent.EXTRA_SUBJECT, "Short Link")
+                        myIntent.putExtra(Intent.EXTRA_TEXT, myShortLinkTV.text)
+                        startActivity(Intent.createChooser(myIntent,"Choose App to Share Shorten Link"))
+                    }
                 }
                 is ApiResponseState.ErrorState -> {
                     myProgressBar.visibility = View.GONE
@@ -118,17 +127,16 @@ class HomeActivity : AppCompatActivity() {
     private fun setUpShortenButtonListener() {
         myViewBinding.shortenButton.setOnClickListener {
             myViewModel.getMyLinkShortened(myViewBinding.enteredURL.text.toString())
-            setUpMyBottomSheetDialog()
+            myBottomSheetDialog.show()
         }
     }
 
     private fun setUpMyBottomSheetDialog(){
-        val bottomSheetDialog = BottomSheetDialog(
+        myBottomSheetDialog = BottomSheetDialog(
             this
         )
 
-        bottomSheetDialog.setContentView(myDialogRootView)
-        bottomSheetDialog.show()
+        myBottomSheetDialog.setContentView(myDialogRootView)
     }
 
     private fun setUpRVAdapter() {
