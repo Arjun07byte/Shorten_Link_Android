@@ -9,6 +9,6 @@ MVVM Architechture is maintained throughout the development to present you the b
 UI is kept cool and simple to let you use the application easily.
 
 
-## Application's APK can be downloaded easily by :- ![Download Shorten Link](https://drive.google.com/file/d/1DXHtwFw3L-zuTWsvXMDlUsjb7CLMcGuo/view?usp=sharing)
+## Application's APK can be downloaded easily from Links Section
 
 ![shorten_link](https://user-images.githubusercontent.com/91238510/178096103-d81836dc-c248-4c92-a702-d20e299c9eac.png)
