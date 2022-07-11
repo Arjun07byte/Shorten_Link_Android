@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".activities.HelpActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/upper_design_GL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/upper_design"
+        android:contentDescription="Upper Design"
+        app:layout_constraintBottom_toTopOf="@id/upper_design_GL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tv_GL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tv_GL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tv_GL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/tv_GL4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".9"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_GL1"
+        app:layout_constraintBottom_toBottomOf="@id/tv_GL2"
+        app:layout_constraintStart_toStartOf="@id/tv_GL3"
+        app:layout_constraintEnd_toEndOf="@id/tv_GL4"
+        android:padding="5dp"
+        android:background="@drawable/edit_text_bg"
+        android:text="@string/help_text"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        android:background="#00FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/upper_design_GL"
+        app:layout_constraintEnd_toStartOf="@id/tv_GL4"
+        android:contentDescription="Home Button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
