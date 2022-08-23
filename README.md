@@ -1,10 +1,10 @@
 # 😎😎 Shorten_Link_Android 😎😎
 
-Android application to shorten long URLs into a single click by just choosing the application while sharing the URLs ( made in just 6 days). 
+Android application to **Shorten long URLs in a Single Click** by just choosing the application while sharing the URLs **( made in just 6 days)**. 
 
-Application uses ROOM database to let the user access all the links they shortened in past, uses RETROFIT to call the cutt.ly API.
+Application uses **ROOM Database** to let the user access all the links they shortened in past, uses **RETROFIT** to call the cutt.ly API.
 
-MVVM Architechture is maintained throughout the development to present you the best possible application.
+**MVVM Architechture** is maintained throughout the development to present you the best possible application.
 
 UI is kept cool and simple to let you use the application easily.
 
