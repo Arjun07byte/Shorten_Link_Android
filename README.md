@@ -4,7 +4,7 @@ Android application to **Shorten long URLs in a Single Click** by just choosing 
 
 Application uses **ROOM Database** to let the user access all the links they shortened in past, uses **RETROFIT** to call the cutt.ly API.
 
-**MVVM Architechture** is maintained throughout the development to present you the best possible application.
+**MVVM Architecture** is maintained throughout the development to present you the best possible application.
 
 UI is kept cool and simple to let you use the application easily.
 

@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/Shorten_Link_Android/app/src/main/res/layout/activity_share_link.xml" value="0.17074275362318841" />
+        <entry key="..\:/AndroidProjects/Shorten_Link_Android/app/src/main/res/layout/bottom_dialog_view.xml" value="0.17074275362318841" />
+        <entry key="..\:/AndroidProjects/Shorten_Link_Android/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.17074275362318841" />
+        <entry key="..\:/AndroidProjects/Shorten_Link_Android/app/src/main/res/layout/search_history_rv.xml" value="0.17074275362318841" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1405" />
         <entry key="app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.1705" />
         <entry key="app/src/main/res/drawable/edit_text_bg.xml" value="0.1705" />

@@ -17,6 +17,23 @@
         <item name="android:fontFamily">@font/allerta_regular</item>
     </style>
 
+    <style name="Theme.ShortenLinkHelp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lightBg</item>
+        <item name="colorPrimaryVariant">@color/lightTextHint</item>
+        <item name="colorOnPrimary">@color/shortenButtonFront</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/lightText</item>
+        <item name="colorSecondaryVariant">@color/shortenButtonBack</item>
+        <item name="colorOnSecondary">@color/darkText</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">@font/allerta_regular</item>
+    </style>
+
     <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/BottomSheetDialogStyle</item>
     </style>
