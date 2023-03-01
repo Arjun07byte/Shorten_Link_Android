@@ -9,6 +9,8 @@ Application uses **ROOM Database** to let the user access all the links they sho
 UI is kept cool and simple to let you use the application easily.
 
 
-## Application's APK can be downloaded easily from Links Section
+***You can Install and test latest app from below 👇***
+
+[![Shorten Link App](https://img.shields.io/badge/ShortenLink-Apk-white.svg?style=for-the-badge&logo=android)](https://github.com/OnlyArjun/Shorten_Link_Android/blob/master/Shorten_Link.apk)
 
 ![shorten_link](https://user-images.githubusercontent.com/91238510/178096103-d81836dc-c248-4c92-a702-d20e299c9eac.png)
